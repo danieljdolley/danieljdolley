@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel J Dolley - Home</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Background image full screen */
+    body {
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navigation bar styles */
+    nav {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav a.active {
+      background-color: rgba(255, 255, 255, 0.4);
+      cursor: default;
+    }
+
+    /* Main content container grows to fill remaining space */
+    main {
+      flex-grow: 1;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 40px;
+      /* Ensure text has a slight shadow for contrast */
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+
+    /* Name placed in bottom right quadrant */
+    .name {
+      font-size: 2.5rem;
+      max-width: 50vw;
+      text-align: right;
+      line-height: 1.2;
+      /* You can add more styling here if you want */
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-wrap: wrap;
+      }
+      nav a {
+        margin: 8px 10px;
+      }
+      main {
+        padding: 20px;
+      }
+      .name {
+        font-size: 1.8rem;
+        max-width: 90vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About me</a>
+    <a href="projects.html">Projects</a>
+    <a href="editorial.html">Editorial services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <div class="name">Daniel J Dolley</div>
+  </main>
+
+</body>
+</html>
